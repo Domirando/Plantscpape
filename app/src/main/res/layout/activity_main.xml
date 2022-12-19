@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/leaf"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="PLANTSCAPE"
+        android:textColor="#0D986A"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/notification"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slider"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="54dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/slider_img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Exclusive Offer"
+                android:textColor="#002140"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:lineHeight="22dp"
+                android:text="Get your 1st plant @ 60% off"
+                android:textColor="#002140" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/search_bg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp">
+
+        <ImageView
+            android:paddingRight="8dp"
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/scanner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="52dp"
+                android:layout_height="76dp"
+                app:srcCompat="@drawable/indoor" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indoor"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#0D986A"
+                    android:layout_gravity="center"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="55dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/strike"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="52dp"
+                android:layout_height="76dp"
+                app:srcCompat="@drawable/flower" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flower"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="#435B71"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="52dp"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/green" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="#435B71"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
